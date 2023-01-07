@@ -1,0 +1,35 @@
+This doc is to try and make an easier rules writing experience and practice more of my vim
+
+Pre-Alpha Rules
+
+Atoms Past Dice Rolling System
+
+Spell Phase
+
+Kon Phase
+
+How Kons work
+    Picking a Kon Spell
+    Picking a Power Level
+    Examples
+Battlefield Phase
+    Phase Order
+        Turn Downtick: At the start of the players Battlefield Phase, the player downticks any AcTi of
+        Units they control
+        Actions: After the Turn Downtick there is an Actions Phase, during this phase the player 
+        selects Units that have no AcTi one by one and resolve a Battlefield Action
+    Battlefield Actions (Available to all Units)
+
+
+Additional Effects
+Picking Actions
+Starting a Game
+What you need
+Setting up
+Starting a game
+Roll off
+Pick Kon Spell and Power level
+Draw 5, Place 2
+Battlefield Deployment
+How to Win
+

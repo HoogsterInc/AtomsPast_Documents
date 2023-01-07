@@ -74,3 +74,5 @@ in that order.
 
   -- Cast Spells. The Player picks a Spell they have in the casting zone and rolls S3/D4 and adds
   the value of the roll to the remaining AcTi of the Spell to see the results of the Spell.
+
+testing the git stuff.

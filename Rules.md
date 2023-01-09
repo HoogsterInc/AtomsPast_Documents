@@ -73,6 +73,42 @@ in that order.
   zone. Check out the examples here [Link to examples]
 
   -- Cast Spells. The Player picks a Spell they have in the casting zone and rolls S3/D4 and adds
-  the value of the roll to the remaining AcTi of the Spell to see the results of the Spell.
+  the value of the roll minus the remaining AcTi of the Spell to see the results of the Spell. (See
+  more about casting spells here)
 
-testing the git stuff.
+- Additional Effects. These are effects from Spells or Abilities that happen after the main Spell
+  steps. This step is ignored if there are no effects.
+
+## Rule Clarifications and Examples
+
+### Spell Actions
+
+More information about the Spell Actions.
+
+## Kon's
+
+In the lore the Unit you pick for a Kon represents your conduit to the battlefield.
+If the Kon is lost then the connection to the important battlefield is lost and will be easily won
+by the enemy Kon.
+
+### Rules
+
+#### Picking a Kon
+
+Each player only picks one model to be their Kon. There are no restrictions unless stated by another
+rule as to what Unit the player can pick. This means that players can pick their Kon's right before
+the start of the game if they want.
+
+#### Choosing your Kon's Spell
+
+Unless stated otherwise on the Spell Card, the player may choose any Spell Card in their Spell Deck.
+Typically this Spell will be chosen to compliment other Spells or Units the Player has chosen for their
+Warband.
+
+#### Kon Spells Power Level
+
+Players may pick any Power Level for their Kon Spell. The same Casting Restrictions apply to these
+Spells as the Spells cast during the Spell Phase - for instance, if a Power Level for a Kon Spell is
+below the AcTi of the Spell, then it will fail.
+
+- The Power Level you pick does not change throughout the game (though Spell Effects might alter them)

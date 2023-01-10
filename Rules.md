@@ -112,3 +112,32 @@ Spells as the Spells cast during the Spell Phase - for instance, if a Power Leve
 below the AcTi of the Spell, then it will fail.
 
 - The Power Level you pick does not change throughout the game (though Spell Effects might alter them)
+
+#### Setting Up You Kon
+
+----- go through this
+
+### The Kon Phase
+
+After the Spell Phase the Kon Phase starts. The Kon Phase consists of:
+
+- Downticking the Kon's Unit AcTi and the Kon's Spell AcTi
+- Picking a Kon Action to take (see below)
+- Additional Effects. Resolve any effects stating they happen at the end
+
+#### Kon Actions
+
+Kon's can take one of three different Actions during the Kon Phase.
+
+- Downtick either the Kon's Unit AcTi or the Kon's Spell AcTi
+- Perform a Unit Action (see Unit Actions)
+- Cast their Spell if the Spell AcTi is zero or Boosted
+
+# Rules I need to clarify and link to
+
+- How Additional Effects are handled - I think just having them trigger in the order the player wants
+  -- but what if there are Enemy Effects, do they trigger first, last, etc? - is a stack made?
+
+Downticking - what that specifically means
+
+along with this ^ is AcTi

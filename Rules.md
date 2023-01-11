@@ -93,29 +93,40 @@ by the enemy Kon.
 
 ### Rules
 
+Kons have two AcTi’s to track, the AcTi for it’s Battlefield Actions, and the AcTi for the Kon Spell.
+Both Downtick at the start of the Kon Phase (see below Kon Phase)
+
 #### Picking a Kon
 
 Each player only picks one model to be their Kon. There are no restrictions unless stated by another
 rule as to what Unit the player can pick. This means that players can pick their Kon's right before
 the start of the game if they want.
 
+Make sure your Unit Card is clearly marked as the Kon. You could use a token, special die, or set the
+Unit Card apart from the rest of your Unit's Cards.
+
 #### Choosing your Kon's Spell
 
-Unless stated otherwise on the Spell Card, the player may choose any Spell Card in their Spell Deck.
-Typically this Spell will be chosen to compliment other Spells or Units the Player has chosen for their
-Warband.
+Your Kon’s Spell can be any Spell in your deck, simply take that Spell Card and remove it from your deck
+placing it next to your Kon’s Unit Card with the Power Level clearly marked (usually with dice)
 
 #### Kon Spells Power Level
 
-Players may pick any Power Level for their Kon Spell. The same Casting Restrictions apply to these
-Spells as the Spells cast during the Spell Phase - for instance, if a Power Level for a Kon Spell is
-below the AcTi of the Spell, then it will fail.
+Players may pick any Power Level for their Kon Spell. This Power Level represents how skillfully the
+Kon knows how to cast the Spell. The Kon Spell is Cast with the same Casting Restrictions as the Spells cast
+during the Spell Phase.
+
+The Kon's Spell is eligible to be Cast when it's AcTi is zero or below. When calculating a Kon Spells
+Effects, double the Power Level of the Kon Spell.
 
 - The Power Level you pick does not change throughout the game (though Spell Effects might alter them)
+- Kon Spells do NOT become Boosted if they are Downticked past zero, the Downtick is simply ignored
 
-#### Setting Up You Kon
-
------ go through this
+Example: Grafted Strike has an AcTi of 6, I have chosen it for my Kon Spell and set it next to my Kon's
+Unit Card and chosen five as it's Power Level. The AcTi for my Spell would then start at, and after casting
+return to 5. Whenever this AcTi reached zero and I could cast the Spell, I would calculate the Kon Spells
+Effects at AcTi 10. In this case that means a Target Unit would be Altered +1MS and make a Melee Attack with
++4Md (10 - 6 = 4, Grafted Strike Cast with X =4, See Casting Spells)
 
 ### The Kon Phase
 
@@ -131,7 +142,83 @@ Kon's can take one of three different Actions during the Kon Phase.
 
 - Downtick either the Kon's Unit AcTi or the Kon's Spell AcTi
 - Perform a Unit Action (see Unit Actions)
-- Cast their Spell if the Spell AcTi is zero or Boosted
+- Cast the Kon Spell if the Kon Spell AcTi is zero. The Kon Spell is Cast using double the Power Level
+  chosen for it (see Kon Spell Power Level)
+
+## Battlefield
+
+The Battlefield is where Units clash
+
+### Playmat
+
+AtomsPast is best played on a playmat or board that has a 28x18 grid on it. Grid Spaces are typically 35mm.
+
+If you are unable to play on a grid, you can use inches. A Unit's Move multiplied by 1.5 (Ex. My Orc Warrior has
+a Move Stat of 3 grid spaces, or 4.5 inches)
+
+### Models and Base Sizes
+
+Because AtomsPast is made to work with as many models as it can, players should play in good faith and not try
+and abuse base sizes or shapes for tactical advantage.
+
+Unit's take up an agreed amount of Grid Spaces on the Battlefield. When moving a Unit for any reason, each part of
+the model is restricted to the movement amount (Ex: Imagine a long dragon model that takes three grid spaces
+length-wise, with a Move Stat of 4. Each grid space the Unit takes up is bound by that 4, so to pivot 90 degrees
+would take this Unit's entire Move of 4 because that is how far the tail section would have to move.)
+
+#### Rules of Thumb for Model Base/Grid Sizes
+
+- Infantry/Single "Man" sized model = 1 Grid Space
+- Calvary = 2 Grid Spaces, typically length-wise
+- Large Sized single models = 2 or 4 Grid Spaces
+- Huge Sized single models = 4 or 6 Grid Spaces.
+
+AtomsPast allows for a lot of flexibility with Unit Sizes (Done in the Warband Builder). Please use best judgement
+and the desire to have fun over min/maxing some base size situation.
+
+### Units
+
+Units is a blanket term for models that have a Unit Card from your Warband List. Each Unit has the following Actions
+they can perform.
+
+#### Unit Actions
+
+- Move. A Unit moves as many grid spaces as it's Move Stat. Cost: AcTi 2
+- Run. A Unit moves twice it's Move Stat. Cost: AcTi 3
+- Attack. The Unit may choose to attempt a Melee or Ranged Attack. Cost AcTi 4
+- Charge. The Unit chooses a target Enemey Unit that is in it's Line of Sight (see here). If the Unit is not engaged
+  with any Enemy Units (see Melee Attacks and Engagement) it may perform a Move
+  with a +1 modifier, and a Melee Attack with +1MD against the target Unit as a Charge Action. If the Unit cannot
+  reach an Enemy Unit then it cannot choose a Charge Action. Cost: AcTi 4
+
+When you pick a Unit to perform an Battlefield Action, you must “pay” the AcTi cost for that Action. This is done by
+putting a dice or counter next to the Unit after it performed it’s Action. AcTi are explained further in the
+Activation Timer section of the Rules. For example, Tom chooses his Orc Warrior to perform a Charge Battlefield
+Action - he would move the Orc, resolve its Charge Melee Attack, and then place a dice showing a 4 to represent the
+Charge Action cost (listed above). Unless other Effects change Tom's Orc Unit's AcTi, it will be able to choose
+another Unit Action in 4 turns.
+
+### Terrain
+
+Terrain rules should be agreed upon by all players before the game starts. Below are modular rules for Terrain. They
+are meant to be combined to represent any battlefield terrain.
+
+- Higher Ground X. This represents the height of terrain on the battlefield. Terrain that does not have a Higher
+  Ground value counts as Higher Ground 0.
+
+  -- The X here represents the height of the Unit on it, and also the amount of grid spaces to check for difference in
+  height to grid spaces around it. Ie: flat ground (0) next to Higher Ground 4 would mean a Unit would have to Move 4
+  to get from the flat ground grid space to the Higher Ground 4 grid space.
+
+### Battlefield Phase
+
+The Battlefield Phase has three steps
+
+- Downtick all Friendly Unit's AcTi's by one
+- Unit Actions. All Friendly Unit's that do not have AcTi on them can choose an Action to perform.
+- Additional Effects
+
+# FOR LATER
 
 # Rules I need to clarify and link to
 
@@ -141,3 +228,11 @@ Kon's can take one of three different Actions during the Kon Phase.
 Downticking - what that specifically means
 
 along with this ^ is AcTi
+
+Spell Effects - and how Spell Cards work -- like downticking and Boosting
+
+I think I want the structure: Barebone Rules, In Depth Rules, Examples
+
+# Examples
+
+Moving and grid spaces - multi grid space models moving, do a long model and a square one

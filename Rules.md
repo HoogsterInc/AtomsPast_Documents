@@ -185,7 +185,7 @@ they can perform.
 
 - Move. A Unit moves as many grid spaces as it's Move Stat. Cost: AcTi 2
 - Run. A Unit moves twice it's Move Stat. Cost: AcTi 3
-- Attack. The Unit may choose to attempt a Melee or Ranged Attack. Cost AcTi 4
+- Attack. The Unit may choose to attempt a Melee or Ranged Attack (see Attacking). Cost AcTi 4
 - Charge. The Unit chooses a target Enemey Unit that is in it's Line of Sight (see here). If the Unit is not engaged
   with any Enemy Units (see Melee Attacks and Engagement) it may perform a Move
   with a +1 modifier, and a Melee Attack with +1MD against the target Unit as a Charge Action. If the Unit cannot
@@ -218,6 +218,39 @@ The Battlefield Phase has three steps
 - Unit Actions. All Friendly Unit's that do not have AcTi on them can choose an Action to perform.
 - Additional Effects
 
+#### Unit's Attacking
+
+Unit's can typically perform either a Melee Attack or a Ranged Attack. When you build your Units in AtomsPast you
+will see what Attacks they can perform.
+
+All Attacks follow the same steps
+
+- Target Unit is within Line of Sight (see below) and in Range of the weapon
+
+##### Melee Attacks
+
+Melee Attacks check
+
+## Line of Sight
+
+Line of Sight or LoS is the imaginary line between two Units. For a Unit to be able to be in Line of Sight to
+another Unit, there must be an imaginary line drawn between the two grid spaces the Units are occupying. If
+there is no Terrain, Units, or other rule that blocks Line of Sight on every grid space this imaginary line crosses
+through than the Unit's have Line of Sight to each other.
+
+- There are many Rules that can alter Line of Sight.
+- Perfectly diagonal LoS: the Player in control of the Attacking Unit chooses one side of the grid spaces to affect
+  LoS. This is the choice for the entire drawn LoS, not on a space by space basis.
+  For examples see Line of Sight Examples.
+
+## Range
+
+The Range is found by taking the shortest path from a grid space to another, typically used to check if Unit Attacks
+are within Range of the Target Unit. Count grid spaces excluding the starting grid space, but including the Target
+grid space.
+
+Ranges for anything requiring LoS have to count the grid spaces the imaginary LoS line would cross.
+
 # FOR LATER
 
 # Rules I need to clarify and link to
@@ -236,3 +269,5 @@ I think I want the structure: Barebone Rules, In Depth Rules, Examples
 # Examples
 
 Moving and grid spaces - multi grid space models moving, do a long model and a square one
+
+Line of Sight and Range examples

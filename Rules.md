@@ -50,11 +50,56 @@ however you play how you want to.
 
 ## How to play AtomsPast
 
+### Dice Rolling in AtomsPast
+
+Almost all rolls done in AtomsPast are done on a Skill system. This system uses a Skill value and
+a Dice value, often represented in the Rules as [S(value)/D(value)]. The Skill value is what dice values
+will be counted into the total of the roll, any dice value that is equal to or less than the Skill value
+is counted. The Dice value is how many dice will be used for the roll. Dice that are rolled but are greater
+than the Skill value add one to the total result.
+
+An example using a Melee Attack. A Unit with Melee Skill 3 (MS 3) and has Melee Damage 4 (MD 4) would make
+a [MS 3/MD 4] attack roll for Melee Attacks. This means the attacking player would roll four dice and any
+dice with value 3 or less gets counted for the value on the dice. Any dice with value greater than 3 will
+add one to the pool.
+Example roll with total values for MS 3/MD 4: dice values: 1, 3, 2, 6 = 7 (1 + 3 + 2 + 1). The 6 is greater
+than the Skill level, so it adds just one. If this dice roll had been done by an extremely powerful MS 6 Unit,
+the total of all the dice would represent the damage dealt by the attack (12).
+
 ### Game Phases
 
 Players alternate taking turns in which they go through three main Phases: Spell Phase, Kon Phase,
 and Battlefield Phase. Each Players turn starts with the Spell Phase and ends with the Battlefield
 Phase.
+
+## Spells
+
+In AtomsPast the grisly reality of magic that alters flesh and powers arcane technologies are
+represented mostly by the Spells you choose to take into battle. Spells in AtomsPast often have
+an X variable in them that represents how powerfully the Spell is cast. This allows for flexibility
+with how powerfully you would like a Spell to occur. Consider this Spell: Spell Z = Cost 5,
+"Target Unit performs a Melee Attack with +X MS". Anything past the Casting cost of 5 adds to our
+Unit's Melee Skill and let's us have a Unit get a "free" Action (done at the time of casting). In
+the game, perhaps you just really need a Unit to finish another Unit off, you might try to just get
+the casting cost paid for. Or maybe your Unit has very low MS, so you Channel your spell multiple
+times to insure a potentially lethal hit.
+
+The goal with Spells in AtomsPast is to give you powerful tools to use tactically with planning ahead.
+Spells typically have an X value that effects
+
+### Spell Rules
+
+Each Player starts the game with a 50 card Spell Deck.
+
+Players Cast and Channel Spells with [S3/D4] rolls
+
+#### Building Your Spell Deck
+
+To create a Spell Deck, you pick any amount of different Spells until your deck has 50 cards.
+Spells have a Knowledge value which tells you how many copies of that Spell you can include in
+your Spell Deck.
+
+- Deck's must have 50 cards.
 
 #### Spell Phase
 
@@ -65,7 +110,7 @@ in that order.
   five cards in hand
 - Spell Actions: The Player decides to perform any of the following three Actions in any order
 
-  -- Place a Spell. Place a Spell into your casting zone and place dice representing it's AcTi[link]
+  -- Place a Spell. Place a Spell into your Casting Zone and place dice representing it's AcTi[link]
   level
 
   -- Downtick Spells. The Player makes a Skill 3 roll with four dice (S3/D4 [see how dice work])
@@ -79,11 +124,16 @@ in that order.
 - Additional Effects. These are effects from Spells or Abilities that happen after the main Spell
   steps. This step is ignored if there are no effects.
 
-## Rule Clarifications and Examples
-
 ### Spell Actions
 
 More information about the Spell Actions.
+
+#### Casting a Spell
+
+Casting a Spell takes planning and effort, which in the game are represented by Placing Spells, Channeling
+Spells, and then Casting them.
+
+Spells that have been Placed in your Casting Zone are eligible to be cast.
 
 ## Kon's
 
@@ -91,7 +141,7 @@ In the lore the Unit you pick for a Kon represents your conduit to the battlefie
 If the Kon is lost then the connection to the important battlefield is lost and will be easily won
 by the enemy Kon.
 
-### Rules
+### Kon Rules
 
 Kons have two AcTi’s to track, the AcTi for it’s Battlefield Actions, and the AcTi for the Kon Spell.
 Both Downtick at the start of the Kon Phase (see below Kon Phase)
@@ -147,7 +197,7 @@ Kon's can take one of three different Actions during the Kon Phase.
 
 ## Battlefield
 
-The Battlefield is where Units clash
+The Battlefield is where Units clash over various terrain, cities and towns.
 
 ### Playmat
 
@@ -211,6 +261,12 @@ are meant to be combined to represent any battlefield terrain.
   height to grid spaces around it. Ie: flat ground (0) next to Higher Ground 4 would mean a Unit would have to Move 4
   to get from the flat ground grid space to the Higher Ground 4 grid space.
 
+  -- Unit's with base sizes greater than one can only be placed for any reason where the difference in Higher Ground
+  values is 1 or less. See examples
+
+  -- The difference in Higher Ground values is calculated for Range by taking half the difference rounded down.
+  See Ranges and Higher Ground.
+
 - Difficult Terrain. Unit's moving through a Difficult Terrain grid space get a cumulative -1 to their Move stat for
   turn
 
@@ -230,6 +286,8 @@ are meant to be combined to represent any battlefield terrain.
 
 - Dangerous Terrain X. Unit's moving through Dangerous Terrain take S6 DX damage. Example: if a Unit moved through
   two grid spaces of Dangerous Terrain 2, that Unit would take S6 D2 damage
+
+Every grid space of terrain effects a Unit whose base size enters it, but only effects the model once per Action
 
 ### Battlefield Phase
 
@@ -272,6 +330,18 @@ grid space.
 
 Ranges for anything requiring LoS have to count the grid spaces the imaginary LoS line would cross.
 
+#### Ranges and Higher Ground
+
+When calculating Range for models with different Higher Ground values, the Range is calculated by taking half the
+difference in Higher Ground, rounded down. So a Unit with a sword attempting to attack and Archer on a grid space
+with one Higher Ground value, would take 1 / 2 = .5 then rounded down = 0.
+
+Example: A Soldier on flat ground (Higher Ground 0) with a Melee Range 1 sword attempts attacking a Archer who is on Higher
+Ground 1. Horizontally the Archer is just one grid space away, so within range of the Solder's sword. When we take
+into account the Higher Ground difference the Archer is still withing Range 1 (Higher Ground difference = 1. Range
+modified by 1 / 2 rounding down (.5 rounded down to 0)). If the Archer was on Higher Ground 2, then the Soldier
+would need a melee weapon with Melee Range 2 or greater to have Range for a Melee Attack against the Archer.
+
 # FOR LATER
 
 # Rules I need to clarify and link to
@@ -308,13 +378,15 @@ Line of Sight and Range examples
 
 - Cover examples and pictures
 
-How does Terrain effect multi grid space models? Cause it gets kinda strange doesn't it? Is the Rule each grid space
-can only effect a model a single time? So a giant walking through dangerous terrain suffers the same as a goblin?
-So: How does a 4 space model walk up a hill, and through a wood?
-
-- I think this kinda makes sense.
-
 Also how do multi - space models handle different Higher Ground values? I think a "as long as each grid space is
 1 or less difference. cause then it could cascade down, like for models on a hill. ". Also Units can't move through
 different height terrain or terrain they can't stand on, unless they have enough movement to get completely through
 it. No horse knight models with the butt on Ground 0 and the head on Ground 4 on a successful charge
+
+Multi-grid space Units can be occupying different higher ground values, however each grid spaces Higher Ground value
+can't be more than 1 difference than those around it. For example a Unit with a base covering four grid spaces could
+stand on a group of grid spaces where the top left = Higher Ground 1, top right = Higher Ground 2, bottom left =
+Higher Ground 2, bottom right = Higher Ground 1. The Unit could not be placed at the examples location if the top
+left grid space had a Higher Ground value of 0 as it would have a two HG value difference.
+
+Every grid space of terrain effects a Unit whose base size enters it, but only effects the model once per Action

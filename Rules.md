@@ -204,11 +204,32 @@ Terrain rules should be agreed upon by all players before the game starts. Below
 are meant to be combined to represent any battlefield terrain.
 
 - Higher Ground X. This represents the height of terrain on the battlefield. Terrain that does not have a Higher
-  Ground value counts as Higher Ground 0.
+  Ground value counts as Higher Ground 0. If your Unit is on Higher Ground than target enemy Unit, your Unit gets
+  a +1S modifier to it's attack rolls against the target Unit.
 
   -- The X here represents the height of the Unit on it, and also the amount of grid spaces to check for difference in
   height to grid spaces around it. Ie: flat ground (0) next to Higher Ground 4 would mean a Unit would have to Move 4
   to get from the flat ground grid space to the Higher Ground 4 grid space.
+
+- Difficult Terrain. Unit's moving through a Difficult Terrain grid space get a cumulative -1 to their Move stat for
+  turn
+
+- Obscuring Terrain. Unit's making Ranged Attacks through grid spaces that have Obscuring Terrain get a cumaltive -1
+  to their RS (-1RS) per space.
+
+- Line of Sight Blocking: Unit's cannot draw Line of Sight through this Terrain.
+
+- Wall X. A grid space with a Wall is Line of Sight Blocking, and cannot be Moved on.
+
+- Cover, Light and Heavy: Cover gives negative modifiers to Units attacking target Unit within Range 1 of Light or
+  Heavy Cover, as long as the LoS between Unit's passes over a grid space providing Cover.
+
+  -- Light Cover modifier = -1S
+
+  -- Heavy Cover modifier = -2S
+
+- Dangerous Terrain X. Unit's moving through Dangerous Terrain take S6 DX damage. Example: if a Unit moved through
+  two grid spaces of Dangerous Terrain 2, that Unit would take S6 D2 damage
 
 ### Battlefield Phase
 
@@ -271,3 +292,29 @@ I think I want the structure: Barebone Rules, In Depth Rules, Examples
 Moving and grid spaces - multi grid space models moving, do a long model and a square one
 
 Line of Sight and Range examples
+
+#### Terrain Examples
+
+- Higher Ground examples for move and shooting: An example of a cliff in the game could
+  be a line of Higher Ground 0 grid spaces, next to Higher Ground 7 spaces.
+
+  -- How does this effect Ranges? Basically saying this is a way of having imaginary distance between grid spaces
+  Off the top of my head: Ranges are effected by Higher Ground by half rounding down. So if a Unit is just 1
+  higher than another, to Melee Attack would actually need to be Range 2 (one up and one horizontally) - With this
+  halving rule, the Unit could still attack a Unit just 1 Higher.
+  It sucks to add math, but I think this adds a lot to the customizable battlefield. Like Units on top a cliff
+  shooting down Helm's Deep style from Higher Ground 6. Their Range is 9, so that would be 3 "down" and 6 left.
+  this feels kinda realistic to me too
+
+- Cover examples and pictures
+
+How does Terrain effect multi grid space models? Cause it gets kinda strange doesn't it? Is the Rule each grid space
+can only effect a model a single time? So a giant walking through dangerous terrain suffers the same as a goblin?
+So: How does a 4 space model walk up a hill, and through a wood?
+
+- I think this kinda makes sense.
+
+Also how do multi - space models handle different Higher Ground values? I think a "as long as each grid space is
+1 or less difference. cause then it could cascade down, like for models on a hill. ". Also Units can't move through
+different height terrain or terrain they can't stand on, unless they have enough movement to get completely through
+it. No horse knight models with the butt on Ground 0 and the head on Ground 4 on a successful charge

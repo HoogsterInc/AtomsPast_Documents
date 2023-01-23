@@ -16,7 +16,11 @@ tabletop games, you will most likely have most of what you need to play the game
 
 The third main goal is to be "fixable". Something that frustrates me is when an aspect of
 a game is broken, or power creeped, or made useless for some reason. The way that AtomsPast
-is being created should allow fast changes to point costs and power levels of Units.
+is being created should allow fast changes to point costs and power levels of Units and
+more modular rules. I'm still trying to figure out how to have the Spell Cards be easily
+fixable, but the solutions I've come up with are bigger projects that will get more
+attention if AtomsPast gets enough resources. Until then Spell Cards will have a list of
+adjustments in the Rulebook.
 
 ## About AtomsPast
 
@@ -38,7 +42,7 @@ AtomsPast uses miniatures to represent your Warband, the rules you are reading n
 in a Warband Builder. In the Builder you construct a Warband based on miniatures you own
 to give them a set of rules for the game. Your Warband consists of your Kon Unit and as many other
 Units you have the points and models to play with. A standard game of AtomsPast is 1500 points,
-however you play how you want to.
+however you play how you want to play.
 
 #### What you need to play
 
@@ -46,14 +50,14 @@ however you play how you want to.
 - Miniatures to represent your Units and Kon
 - A gridded battlemat (See [making your own battlemat])
 - Spell Card deck (See [making your Spell Deck])
-- A Warband List (generated through this app)
+- A Warband List (start making your Warband)
 
 ## How to play AtomsPast
 
 ### Dice Rolling in AtomsPast
 
 Almost all rolls done in AtomsPast are done on a Skill system. This system uses a Skill value and
-a Dice value, often represented in the Rules as [S(value)/D(value)]. The Skill value is what dice values
+a Dice/Damage value, often represented in the Rules as [S(value)/D(value)]. The Skill value is what dice values
 will be counted into the total of the roll, any dice value that is equal to or less than the Skill value
 is counted. The Dice value is how many dice will be used for the roll. Dice that are rolled but are greater
 than the Skill value add one to the total result.
@@ -66,32 +70,48 @@ Example roll with total values for MS 3/MD 4: dice values: 1, 3, 2, 6 = 7 (1 + 3
 than the Skill level, so it adds just one. If this dice roll had been done by an extremely powerful MS 6 Unit,
 the total of all the dice would represent the damage dealt by the attack (12).
 
-### Game Phases
+### Activation Timers
 
-Players alternate taking turns in which they go through three main Phases: Spell Phase, Kon Phase,
-and Battlefield Phase. Each Players turn starts with the Spell Phase and ends with the Battlefield
-Phase.
+Activation Timers ("AcTi" throughout most of the rules) represent the "cost" of various actions. To use AcTi's
+in AtomsPast, simply put a dice with the AcTi value on or near the card or model. There are rules below for when those
+dice get "Downticked". Typically the player will have to plan their tactics around AcTi.
+
+- AcTi: An Activation Timer placed on a Unit or card to represent the amount of time or power needed to perform an
+  Action
+
+- Downtick: To "Downtick" an AcTi, simply subtract 1 from the AcTi and change the dice tracking the AcTi accordingly.
+  Ex: Orc Warrior has AcTi 2, at the start of the Battlefield Phase all friendly Units and Effects Downtick one. The
+  Orc Warrior now has AcTi 1. If nothing changes for the Orc Warrior, next turn his final AcTi will be removed and
+  they can pick a Action to perform.
+
+Units and Kons both Downtick at the start of their respective Phases (Battlefield and Kon). Spells are Downticked by
+Channeling. More detailed rules for Units, Kons, and Spells are below.
 
 ## Spells
 
 In AtomsPast the grisly reality of magic that alters flesh and powers arcane technologies are
 represented mostly by the Spells you choose to take into battle. Spells in AtomsPast often have
 an X variable in them that represents how powerfully the Spell is cast. This allows for flexibility
-with how powerfully you would like a Spell to occur. Consider this Spell: Spell Z = Cost 5,
-"Target Unit performs a Melee Attack with +X MS". Anything past the Casting cost of 5 adds to our
-Unit's Melee Skill and let's us have a Unit get a "free" Action (done at the time of casting). In
-the game, perhaps you just really need a Unit to finish another Unit off, you might try to just get
-the casting cost paid for. Or maybe your Unit has very low MS, so you Channel your spell multiple
-times to insure a potentially lethal hit.
+with how powerfully you would like a Spell to occur.
+
+Consider this quick example: Spell Z = AcTi Cost 5, "Target Unit performs a Melee Attack with +X MS".
+This Spell gives our Unit a "free" Action (Melee Attack) performed when the Spell is cast, and anything above the Casting cost of 5
+adds to the Unit's Melee Skill for this Melee Attack.
+In the game, perhaps you just really need a Unit to
+finish another Unit off, you might try to just get the casting cost paid for. Or maybe your Unit
+has very low MS, so you Channel your spell multiple times to insure a potentially lethal hit.
 
 The goal with Spells in AtomsPast is to give you powerful tools to use tactically with planning ahead.
-Spells typically have an X value that effects
 
 ### Spell Rules
 
 Each Player starts the game with a 50 card Spell Deck.
 
 Players Cast and Channel Spells with [S3/D4] rolls
+
+Players each have a "Casting Zone". The Casting Zone is the area a player is lining up their Spells
+that have been placed. These Spells can then be Channeled or Cast. Spells in a players Casting Zone
+should be in a row, and easily visible to their opponents.
 
 #### Building Your Spell Deck
 
@@ -114,26 +134,57 @@ in that order.
   level
 
   -- Downtick Spells. The Player makes a Skill 3 roll with four dice (S3/D4 [see how dice work])
-  and evenely distributes the value of the roll amoung the Spells they have placed in their casting
+  and evenly distributes the value of the roll among the Spells they have placed in their casting
   zone. Check out the examples here [Link to examples]
 
-  -- Cast Spells. The Player picks a Spell they have in the casting zone and rolls S3/D4 and adds
+  -- Cast Spells. The Player picks a Spell they have in the casting zone and rolls S3/D4. Add
   the value of the roll minus the remaining AcTi of the Spell to see the results of the Spell. (See
   more about casting spells here)
 
 - Additional Effects. These are effects from Spells or Abilities that happen after the main Spell
   steps. This step is ignored if there are no effects.
 
-### Spell Actions
+#### Spell Actions
 
-More information about the Spell Actions.
+- Place Spell: Pick a Spell card from your hand and place it near other cards in your Casting Zone
 
-#### Casting a Spell
+- Channel: Roll [S3/D4] and apply the result evenly in Downticks amoung the Spell you have in your
+  Casting Zone. See examples
+
+- Cast: Roll [S3/D4] and apply the Cast Result to a target Spell. See Casting a Spell.
+
+##### Casting a Spell
 
 Casting a Spell takes planning and effort, which in the game are represented by Placing Spells, Channeling
 Spells, and then Casting them.
 
-Spells that have been Placed in your Casting Zone are eligible to be cast.
+To cast a Spell, pick a target Spell in your Casting Zone. Then roll your Skill dice [S3/D4] and subtract
+the AcTi the Spell had remaining. If there is more than zero AcTi remaining the Spell fails.
+
+Roll dice, subtract remaining AcTi. Once AcTi is gone, you add the remaining value and resolve the spell
+with X being that remaining value.
+
+Take a Cast Result and subtract the remaining AcTi, the remaining amount is the X value of the Spell.
+
+Cast Result:
+Spells are Cast once a Cast Result has been calculated. Cast Results are the total power that went into
+the Spell minus the remaining AcTi on the Spell. If the result is zero or greater the spell is cast and
+the result is the X value of the Spell.
+
+- For Spells cast from the Casting Zone,
+
+Spells that have been Placed in your Casting Zone are eligible to be cast. See Spell Actions.
+
+When a player Casts a Spell, they follow the directions on the card.
+
+##### Boosting
+
+Spells can be Boosted. Boosting Spells happens when an effect would Downtick a Spell that is already
+at AcTi 0. Instead of this Downtick being ignored, a Boosted dice is placed next to the Spell that
+count how many times the Spell would have been Downticked. There is no limit to how high you can Boost
+a card.
+
+When calculating the result of a Spell being cast, add the Boosted value to that result.
 
 ## Kon's
 
@@ -162,21 +213,24 @@ placing it next to your Kon’s Unit Card with the Power Level clearly marked (u
 
 #### Kon Spells Power Level
 
-Players may pick any Power Level for their Kon Spell. This Power Level represents how skillfully the
+Players may pick any Power Level for their Kon Spell. This Power Level represents how powerfully the
 Kon knows how to cast the Spell. The Kon Spell is Cast with the same Casting Restrictions as the Spells cast
-during the Spell Phase.
+during the Spell Phase but uses the Power Level times 2 as the Cast Result (Ex: Power Level 5 would be cast
+as a result of 10).
 
 The Kon's Spell is eligible to be Cast when it's AcTi is zero or below. When calculating a Kon Spells
-Effects, double the Power Level of the Kon Spell.
+Cast Result, double the Power Level of the Kon Spell.
 
 - The Power Level you pick does not change throughout the game (though Spell Effects might alter them)
 - Kon Spells do NOT become Boosted if they are Downticked past zero, the Downtick is simply ignored
 
-Example: Grafted Strike has an AcTi of 6, I have chosen it for my Kon Spell and set it next to my Kon's
-Unit Card and chosen five as it's Power Level. The AcTi for my Spell would then start at, and after casting
-return to 5. Whenever this AcTi reached zero and I could cast the Spell, I would calculate the Kon Spells
-Effects at AcTi 10. In this case that means a Target Unit would be Altered +1MS and make a Melee Attack with
-+4Md (10 - 6 = 4, Grafted Strike Cast with X =4, See Casting Spells)
+Example: Grafted Strike has an AcTi of 6, Tom has chosen it for his Kon Spell and set it next to his Kon's
+Unit Card. He chose five for it's Power Level. The AcTi for his Spell would then start at five, and after casting
+return to five. Whenever this AcTi reached zero Tom could choose to Cast the Kon Spell as his Kon Action.
+To cast the Kon Spell Tom would calculate the Kon Spells Effects at a Cast Result of 10 (Kon Power Level \* 2).
+In this case that means a Target Unit would be Altered +1MS and make a
+Melee Attack with +4Md (10 - 6 = 4, the Power Level minus the AcTi = Grafted Strike Cast with X =4,
+See Casting Spells)
 
 ### The Kon Phase
 
@@ -184,7 +238,7 @@ After the Spell Phase the Kon Phase starts. The Kon Phase consists of:
 
 - Downticking the Kon's Unit AcTi and the Kon's Spell AcTi
 - Picking a Kon Action to take (see below)
-- Additional Effects. Resolve any effects stating they happen at the end
+- Additional Effects. Resolve any additional effects
 
 #### Kon Actions
 
@@ -204,7 +258,7 @@ The Battlefield is where Units clash over various terrain, cities and towns.
 AtomsPast is best played on a playmat or board that has a 28x18 grid on it. Grid Spaces are typically 35mm.
 
 If you are unable to play on a grid, you can use inches. A Unit's Move multiplied by 1.5 (Ex. My Orc Warrior has
-a Move Stat of 3 grid spaces, or 4.5 inches)
+a Move Stat of 3 grid spaces, or 4.5 inches) is an approximation.
 
 ### Models and Base Sizes
 
@@ -248,6 +302,14 @@ Action - he would move the Orc, resolve its Charge Melee Attack, and then place 
 Charge Action cost (listed above). Unless other Effects change Tom's Orc Unit's AcTi, it will be able to choose
 another Unit Action in 4 turns.
 
+#### Altered Units
+
+When the word "altered" is used, it means a permanent effect placed on a Unit, such as an additional limb that
+aids in melee combat. Kon's have near infinite amounts of ways they can enhance or weaken Units.
+
+When a card says a Unit is "altered", that effect is permanent. Place the card altering the Unit beneath the Unit
+card and track the change to it's stats.
+
 ### Terrain
 
 Terrain rules should be agreed upon by all players before the game starts. Below are modular rules for Terrain. They
@@ -277,7 +339,7 @@ are meant to be combined to represent any battlefield terrain.
 
 - Wall X. A grid space with a Wall is Line of Sight Blocking, and cannot be Moved on.
 
-- Cover, Light and Heavy: Cover gives negative modifiers to Units attacking target Unit within Range 1 of Light or
+- Cover, Light and Heavy: Cover gives negative modifiers to Units attacking a target Unit within Range 1 of Light or
   Heavy Cover, as long as the LoS between Unit's passes over a grid space providing Cover.
 
   -- Light Cover modifier = -1S
@@ -300,15 +362,41 @@ The Battlefield Phase has three steps
 #### Unit's Attacking
 
 Unit's can typically perform either a Melee Attack or a Ranged Attack. When you build your Units in AtomsPast you
-will see what Attacks they can perform.
+will see what Attacks they can perform based on their Weapons and Keywords.
 
 All Attacks follow the same steps
 
-- Target Unit is within Line of Sight (see below) and in Range of the weapon
+- Target Unit is within Line of Sight (see below)
+- Target Unit is within Range of the weapon/ability
+
+##### Combined Attacks
+
+Units that have no AcTi and are within Range 1.5 of each other can choose to perform a Combined Attack instead of
+a normal Attack. To perform a Combined Attack, take the Damage/Dice of the first Unit and add half the second Unit's
+Damage/Dice to the dice pool. Then make the attack roll with +1 Skill. Both Units must be able to make the Attack or
+you cannot choose to perform a Combined Attack.
+
+Example: Two Goblin Archers with RS 3, RD 3, RR 7 want to attack the same Unit. They both have no AcTi, and are within
+range of an Enemy Footmen. The Footmen has a Shield that blocks two damage, so two separate low RS attacks will
+most likely be ineffective. They choose to make a Combined Ranged Attack and roll [RS 4/ RD 4] to determine damage.
+They both get an AcTi 4 for Attacking.
 
 ##### Melee Attacks
 
-Melee Attacks check
+Melee Attacks check LoS and Range for any attacks made in your Unit's Melee Range.
+
+Melee Attacks use the attacking Unit's Melee Skill and Melee Damage/Dice [MS/MD] to determine damage results.
+
+##### Outnumbered
+
+A Unit that is within two or more Enemy Units Melee Range, and those Enemy Units are not in Melee Range of other
+friendly Units is considered Outnumbered. A Unit that is Outnumbered gives a +1MS modifier to Enemy Units performing
+Melee Attacks against it.
+
+##### Flanking Attacks
+
+Units that have Enemy Units directly to each side of it (front/back, left/right), is considered Flanked. Units
+attacking a Flanked Unit get a +1MD modifier to their Melee Attacks.
 
 ## Line of Sight
 
@@ -342,6 +430,12 @@ into account the Higher Ground difference the Archer is still withing Range 1 (H
 modified by 1 / 2 rounding down (.5 rounded down to 0)). If the Archer was on Higher Ground 2, then the Soldier
 would need a melee weapon with Melee Range 2 or greater to have Range for a Melee Attack against the Archer.
 
+### Game Phases
+
+Players alternate taking turns in which they go through three main Phases: Spell Phase, Kon Phase,
+and Battlefield Phase. Each Players turn starts with the Spell Phase and ends with the Battlefield
+Phase.
+
 # FOR LATER
 
 # Rules I need to clarify and link to
@@ -349,11 +443,9 @@ would need a melee weapon with Melee Range 2 or greater to have Range for a Mele
 - How Additional Effects are handled - I think just having them trigger in the order the player wants
   -- but what if there are Enemy Effects, do they trigger first, last, etc? - is a stack made?
 
-Downticking - what that specifically means
+Effects - Like what are "Effects" and how do they work?
 
-along with this ^ is AcTi
-
-Spell Effects - and how Spell Cards work -- like downticking and Boosting
+Spell costs - and how Spell Cards work -- like downticking and Boosting
 
 I think I want the structure: Barebone Rules, In Depth Rules, Examples
 
@@ -390,3 +482,62 @@ Higher Ground 2, bottom right = Higher Ground 1. The Unit could not be placed at
 left grid space had a Higher Ground value of 0 as it would have a two HG value difference.
 
 Every grid space of terrain effects a Unit whose base size enters it, but only effects the model once per Action
+
+## Example written game turn
+
+This is a written example of a game between Tom and Jerry. This example is going to go through the start of the Game
+Until the end of turn three. The Units named won't include all their stats, just what needs to be used at that time.
+
+Getting into specifics would make this an extremely long read, and the goal is to show the basic flow and main Rules
+of the game, for more specific examples look in the Example section.
+
+#### Pre-Turn 1
+
+Tom wins the dice off for going first. He picks his Kon model, a Orc Boar Rider (Orc Kon), and picks the Spell
+"Grafted Strike" at a Power Level of 5.
+
+> Grafted Strike: AcTi 5  
+> Alter target Unit +1 MS. Target Unit may perform a Melee Attack with +X MD.
+> "Yes it's painful, but admit it - a giant scorpion tail is kinda cool to have, right?"
+
+Tom sets a copy of Grafted Strike from his Spell Deck next to his Kon's Unit card with a dice set to 5 and marks on
+his Kon card his Power Level of 5. Tom then
+shuffles his deck and draws 5 Spell Cards. He picks two of those Spells to place in his Casting Zone and marks the
+appropriate AcTi for them.
+
+Jerry now follows the same steps, picks a Elf Riflemen for his Kon (Elf Kon), and "Bone Explosion" at a Power Level
+of 3.
+
+> Bone Explosion: AcTi 4  
+> Target friendly Unit takes [3S/D5] damage. If it is not destroyed roll [3S/D9] damage against target Enemy Unit in
+> Range 1.5. If the target Friendly Unit was destroyed by the damage it took with this Spell, then roll [3 + X S/D9]
+> damage against target Enemy Unit in Range 1.5
+
+Jerry sets a copy aside like Tom did with Grafted Strike and puts a 3 for Power Level tracking and a Dice showing a 3
+for the Spells starting game AcTi. Jerry then draws 5 Cards and places two of them in his Casting Zone.
+
+Then the game moves to the Deployment Phase. Tom deploys all of his Units up to Range 3 from his board edge, then
+Jerry does the same. Once Jerry is done it is time to begin Turn 1.
+
+##### Turn 1
+
+Tom moves to his Spell Phase, he decides to Channel the Spells he has in his Casting Zone. He rolls [S3/D4] and gets
+a 2,3,1,5 = 7 (2 + 3 + 1 + 1 as the 5 is above Skill 3). He distributes the Downticks evenly but then has an remaining
+Downtick. He chooses Spell A to get an additional Downtick. For his second and final Spell Action he chooses to place
+another Spell in his Casting Zone.
+
+Tom then moves to his Kon Phase. He downticks his Kon's AcTi for his Kon Spell from 5 to 4. He doesn't have a
+Battle Actions AcTi to downtick for him yet, but that will change now as Tom picks a Battlefield Action of Run
+for his Orc Kon. His Orc Kon has a Move of 4, so Tom moves him a total of 8 grid spaces for his Run.
+
+# random thoughts
+
+What if Channeling is [S4/D4] and casting is [S3/D4]? It kinda makes sense in a way and incentivized the planning
+more spells - or maybe channel 3 cast 2?...
+
+- what I like a lot about this is that it incentivizes the placing of spells ... but that is also kinda incentivezed
+  by just the timing aspect and casting costs right? In that way this makes the game a lot more dependent on that roll
+  -- a diff of 4-16 vs 4-12 with the extra pip side being available, 66% pip values vs 50% pip values with that extra 16
+  being 4 whole ticks... it's a lot
+
+- deciding NO on this for now. If placing spells and doing more planning becomes an issue it can be looked at again

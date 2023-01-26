@@ -182,7 +182,7 @@ When a player Casts a Spell, they follow the directions on the card.
 Spells can be Boosted. Boosting Spells happens when an effect would Downtick a Spell that is already
 at AcTi 0. Instead of this Downtick being ignored, a Boosted dice is placed next to the Spell that
 count how many times the Spell would have been Downticked. There is no limit to how high you can Boost
-a card.
+a Spell.
 
 When calculating the result of a Spell being cast, add the Boosted value to that result.
 
@@ -229,7 +229,7 @@ Unit Card. He chose five for it's Power Level. The AcTi for his Spell would then
 return to five. Whenever this AcTi reached zero Tom could choose to Cast the Kon Spell as his Kon Action.
 To cast the Kon Spell Tom would calculate the Kon Spells Effects at a Cast Result of 10 (Kon Power Level \* 2).
 In this case that means a Target Unit would be Altered +1MS and make a
-Melee Attack with +4Md (10 - 6 = 4, the Power Level minus the AcTi = Grafted Strike Cast with X =4,
+Melee Attack with +4MD (10 - 6 = 4, the Power Level minus the AcTi = Grafted Strike Cast with X =4,
 See Casting Spells)
 
 ### The Kon Phase
@@ -304,16 +304,16 @@ another Unit Action in 4 turns.
 
 #### Altered Units
 
-When the word "altered" is used, it means a permanent effect placed on a Unit, such as an additional limb that
-aids in melee combat. Kon's have near infinite amounts of ways they can enhance or weaken Units.
+When the word "altered" is used, it means a permanent effect placed on a Unit, such as a Spell that grafts an additional limb that
+aids in melee combat. Players have many Spells they can Cast to enhance or weaken Units.
 
-When a card says a Unit is "altered", that effect is permanent. Place the card altering the Unit beneath the Unit
-card and track the change to it's stats.
+When a card says a Unit is "altered"/"Altered", that effect is permanent. If Altered by a Spell place the card altering the Unit beneath the Unit
+card and track the change to it's stats (when the Unit is destroyed this Spell card goes to Discard).
 
 ### Terrain
 
 Terrain rules should be agreed upon by all players before the game starts. Below are modular rules for Terrain. They
-are meant to be combined to represent any battlefield terrain.
+are meant to be combined to represent as many battlefield terrain variations as possible.
 
 - Higher Ground X. This represents the height of terrain on the battlefield. Terrain that does not have a Higher
   Ground value counts as Higher Ground 0. If your Unit is on Higher Ground than target enemy Unit, your Unit gets
@@ -329,6 +329,9 @@ are meant to be combined to represent any battlefield terrain.
   -- The difference in Higher Ground values is calculated for Range by taking half the difference rounded down.
   See Ranges and Higher Ground.
 
+  -- Higher Ground and LoS Terrain interactions: If a Unit is on Higher Ground that is taller (a larger X value)
+  then LoS blocking Terrain then it can have LoS drawn to it. (See Higher Ground Examples)
+
 - Difficult Terrain. Unit's moving through a Difficult Terrain grid space get a cumulative -1 to their Move stat for
   turn
 
@@ -337,7 +340,10 @@ are meant to be combined to represent any battlefield terrain.
 
 - Line of Sight Blocking: Unit's cannot draw Line of Sight through this Terrain.
 
-- Wall X. A grid space with a Wall is Line of Sight Blocking, and cannot be Moved on.
+- Wall X. A grid space with a Wall is Line of Sight Blocking, and cannot be Moved on. X is how tall the Wall is for LoS purposes.
+
+  -- Walls and Higher Ground: If a Unit is on Higher Ground that is taller than Terrain that would provide Cover, it does not
+  benefit from the Cover modifiers
 
 - Cover, Light and Heavy: Cover gives negative modifiers to Units attacking a target Unit within Range 1 of Light or
   Heavy Cover, as long as the LoS between Unit's passes over a grid space providing Cover.
@@ -345,6 +351,9 @@ are meant to be combined to represent any battlefield terrain.
   -- Light Cover modifier = -1S
 
   -- Heavy Cover modifier = -2S
+
+  -- Cover and Higher Ground: If a Unit is on Higher Ground that is taller than Terrain that would provide Cover, it does not
+  benefit from the Cover modifiers
 
 - Dangerous Terrain X. Unit's moving through Dangerous Terrain take S6 DX damage. Example: if a Unit moved through
   two grid spaces of Dangerous Terrain 2, that Unit would take S6 D2 damage
